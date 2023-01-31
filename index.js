@@ -16,12 +16,12 @@ app.use(cors());
 
 let db = {
     "returnCod":"0", 
-    "message":""
+    "message":"Success"
   }
 
   let dberror = {
     "returnCod":"4", 
-    "message":""
+    "message":"Error"
   }
 
   // Buscar dados
