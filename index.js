@@ -28,11 +28,11 @@ let db = {
   app.get('/users/insuranceValues', (req, res) =>{
     return res.json(db);
   });
-
   // Inserir dados
   app.post('/users/insuranceValues', (req, res) =>{
       const body = req.body;
     if(!body.codigo_cliente || body.codigo_cliente === ""){
+         res.status(400);
          return res.json(dberror);
     }
     else{
